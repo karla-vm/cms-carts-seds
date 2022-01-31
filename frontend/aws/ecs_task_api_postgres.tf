@@ -7,6 +7,10 @@ locals {
   }
 }
 
+data "aws_ssm_parameter" "prince_api_endpoint" {
+  name = "/${terraform.workspace}/prince_api_endpoint"
+}
+
 data "aws_ssm_parameter" "postgres_user" {
   name = local.postgres_user
 }
