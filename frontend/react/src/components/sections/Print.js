@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 import { loadSections } from "../../actions/initial";
 import Section from "../layout/Section";
 import axios from "../../authenticatedAxios";
-
+//test
 // Print page
 const printWindow = (event) => {
   event.preventDefault();
